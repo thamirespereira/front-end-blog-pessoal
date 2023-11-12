@@ -34,8 +34,9 @@ function Login() {
 
         return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-teal-200">
-                <form className="flex justify-center items-center flex-col w-1/2 gap-4 max-w-sm m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl" 
+            <div className="grid grid-cols-1 h-screen place-items-center font-bold bg-gradient-to-r from-cyan-500 to-violet-500">
+                <form className="flex justify-center items-center flex-col w-1/2 gap-4 max-w-sm m-4 p-10 
+                                bg-white bg-opacity-25 rounded shadow-xl" 
                     onSubmit={login}>
                     <h2 className="text-white-600 text-5xl font-sans">Entrar</h2>
                     <div className="flex flex-col w-full">
@@ -61,11 +62,12 @@ function Login() {
                             value={usuarioLogin.senha} 
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
+            
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-gray-700 flex justify-center
-                                   hover:bg-gray-300 text-white w-1/2 py-2">
+                        className="rounded bg-violet-600 flex justify-center
+                                   hover:bg-gradient-to-r from-violet-100 to-violet-300 text-white w-1/2 py-2">
                         {isLoading ? <RotatingLines
                             strokeColor="white"
                             strokeWidth="5"
