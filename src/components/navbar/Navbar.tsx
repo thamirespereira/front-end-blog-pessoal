@@ -15,15 +15,18 @@ function Navbar() {
     }
     return (
         <>
-            <div className="container flex justify-between text-lg">
-                <Link to='/home' className='text-2xl font-bold'>Blog Pessoal</Link>
+            <div className="flex justify-between text-lg bg-gradient-to-r from-cyan-600 to-violet-600 bg-auto">
+                <Link to='/home' className='text-2xl font-bold text-white px-5 '>Blog Pessoal</Link>
 
-                <div className='flex gap-4'>
+                <div className='flex gap-4 text-white px-5'>
                     Postagens
-                    <Link to='/temas' className='hover:underline'>Temas</Link>
-                    <Link to='/cadastroTema' className='hover:underline'>Cadastrar Tema</Link>
+                    <Link to='/temas' className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
+                     hover:bg-blue-600 text-gray-100 text-lg '>Temas</Link>
+                    <Link to='/cadastroTema' className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
+                     hover:bg-blue-600 text-gray-100 text-lg'>Cadastrar Tema</Link>
                     Perfil
-                    <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
+                    <Link to='' onClick={logout} className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
+                     hover:bg-blue-600 text-gray-100 text-lg'>Sair</Link>
                 </div>
             </div>
         </>
