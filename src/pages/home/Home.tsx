@@ -6,8 +6,8 @@ function Home() {
     return (
         
         <>
-            <div className="bg-indigo-900 flex justify-center">
-                <div className='container grid grid-cols-2 text-white'>
+            <div className="bg-gradient-to-r from-cyan-500 to-violet-500 flex justify-center">
+                <div className='grid grid-cols-2 text-white'>
                     <div className="flex flex-col gap-4 items-center justify-center py-4">
                         <p className='text-xl'>
                             Expresse aqui seus pensamentos e opniões
@@ -26,7 +26,7 @@ function Home() {
                         <img
                             src="https://i.imgur.com/fyfri1v.png"
                             alt="Imagem Página Home"
-                            className='w-2/3'
+                            //className='w-2/3'
                         />
                     </div>
                 </div>
