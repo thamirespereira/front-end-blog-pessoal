@@ -135,7 +135,8 @@ function FormularioPostagem() {
                 {id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}
             </h1>
 
-            <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaPostagem}>
+            <form className="flex justify-center items-center flex-col w-1/2 gap-4 max-w-sm m-4 p-10 
+                                bg-white bg-opacity-25 rounded shadow-xl" onSubmit={gerarNovaPostagem}>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="titulo">Título da Postagem</label>
                     <input

@@ -25,7 +25,8 @@ function Navbar() {
                      hover:bg-blue-600 text-gray-100 text-lg '>Temas</Link>
                     <Link to='/cadastroTema' className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
                      hover:bg-blue-600 text-gray-100 text-lg'>Cadastrar Tema</Link>
-                    Perfil
+                    <Link to='/perfil' className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
+                     hover:bg-blue-600 text-gray-100 text-lg'>Perfil</Link>
                     <Link to='' onClick={logout} className='p-2 pl-5 pr-5 transition-colors duration-700 transform 
                      hover:bg-blue-600 text-gray-100 text-lg'>Sair</Link>
                 </div>
