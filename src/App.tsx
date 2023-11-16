@@ -29,7 +29,7 @@ function App() {
                         <Route path="/editarTema/:id" element={<FormularioTema />} />
                         <Route path="/deletarTema/:id" element={<DeletarTema />} />
                         <Route path="/postagens" element={<ListaPostagens />} />
-                        <Route path="/postagens" element={<FormularioPostagem />} />
+                        <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
                         <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
                         <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
                     </Routes>
