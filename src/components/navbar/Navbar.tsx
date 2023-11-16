@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { ReactNode, useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { AuthContext } from '../../contexts/AuthContext'
@@ -6,15 +6,19 @@ import { AuthContext } from '../../contexts/AuthContext'
 function Navbar() {
 
     const navigate = useNavigate()
-    const { handleLogout } = useContext(AuthContext)
+    const { usuario, handleLogout } = useContext(AuthContext)
 
     function logout() {
         handleLogout()
         alert('Usuário deslogado com sucesso')
         navigate('/login')
     }
-    return (
-        <>
+
+    let component: ReactNode
+
+    if (usuario.token !== "") {
+
+        component = (
             <div className="flex justify-between text-lg bg-gradient-to-r from-cyan-600 to-violet-600 bg-auto">
                 <Link to='/home' className='text-2xl font-bold text-white px-5 '>Blog Pessoal</Link>
 
@@ -31,8 +35,15 @@ function Navbar() {
                      hover:bg-blue-600 text-gray-100 text-lg'>Sair</Link>
                 </div>
             </div>
+        )
+    }
+    return (
+        <>
+            { component }
         </>
     )
-}
+
+    }
 
 export default Navbar
+
