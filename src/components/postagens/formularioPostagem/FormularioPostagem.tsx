@@ -146,7 +146,7 @@ function FormularioPostagem() {
                         placeholder="Insira aqui o Título"
                         name="titulo"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-slate-300 rounded p-2"
                     />
                 </div>
 
@@ -160,13 +160,13 @@ function FormularioPostagem() {
                         placeholder="Adicione aqui o Texto da Postagem"
                         name="texto"
                         required
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-slate-300 rounded p-2"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
                     <p>Tema da Postagem</p>
-                    <select name="tema" id="tema" className='border p-2 border-slate-800 rounded'
+                    <select name="tema" id="tema" className='border p-2 border-slate-300 rounded'
                         onChange={(e) => buscarTemaPorId(e.currentTarget.value)}
                     >
                         <option value="" selected disabled>Selecione um Tema</option>
@@ -180,8 +180,8 @@ function FormularioPostagem() {
                 <button
                     type='submit'
                     disabled={carregandoTema}
-                    className='flex justify-center rounded disabled:bg-slate-200 bg-indigo-400 
-                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-2'
+                    className='flex justify-center rounded disabled:bg-slate-200 bg-cyan-400 
+                            hover:bg-cyan-800 text-white font-bold w-1/2 mx-auto py-2'
                 >
                     {isLoading ?
                         <RotatingLines

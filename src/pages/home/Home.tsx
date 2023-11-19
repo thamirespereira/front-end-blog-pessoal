@@ -1,4 +1,4 @@
-import ListaPostagens from "../../components/listaPostagens/ListaPostagens"
+import ListaPostagens from "../../components/postagens/listaPostagens/ListaPostagens"
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem"
 
 

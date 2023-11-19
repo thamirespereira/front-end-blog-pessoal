@@ -1,11 +1,11 @@
-import CardPostagens from "../postagens/cardPostagens/CardPostagens";
+import CardPostagens from "../cardPostagens/CardPostagens";
 
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Dna } from 'react-loader-spinner';
-import Postagem from "../../models/Postagem";
-import { AuthContext } from "../../contexts/AuthContext";
-import { buscar } from "../../services/Service";
+import Postagem from "../../../models/Postagem";
+import { AuthContext } from "../../../contexts/AuthContext";
+import { buscar } from "../../../services/Service";
 
 function ListaPostagens() {
 

@@ -7,7 +7,7 @@ interface CardPostagensProps {
 
 function CardPostagens({ post }: CardPostagensProps) {
     return (
-        <div className='border-slate-900 border 
+        <div className='border-slate-300 border 
             flex flex-col rounded overflow-hidden justify-between'>
 
             <div>

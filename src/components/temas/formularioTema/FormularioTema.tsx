@@ -106,7 +106,7 @@ function FormularioTema() {
     }
 
     return (
-        <div className="container flex flex-col items-center justify-center mx-auto">
+        <div className="container flex flex-col items-center justify-center mx-auto py-8 rounded shadow-xl">
             <h1 className="text-4xl text-center my-8">
                 {id === undefined ? 'Cadastrar Tema' : 'Editar Tema'}
             </h1>
@@ -118,14 +118,14 @@ function FormularioTema() {
                         type="text"
                         placeholder="Descreva aqui seu tema"
                         name='descricao'
-                        className="border-2 border-slate-700 rounded p-2"
+                        className="border-2 border-slate-200 rounded p-2"
                         value={tema.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
                 <button
-                    className="rounded text-slate-100 bg-indigo-400 
-                    hover:bg-indigo-800 w-1/2 py-2 mx-auto flex justify-center" type="submit">
+                    className="rounded text-slate-100 bg-cyan-400 
+                    hover:bg-cyan-800 w-1/2 py-2 mx-auto flex justify-center" type="submit">
 
                     {isLoading ?
                         <RotatingLines
