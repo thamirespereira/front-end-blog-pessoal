@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem'
+import Curtir from '../../curtir/Curtir'
 
 interface CardPostagensProps {
     post: Postagem
@@ -27,12 +28,13 @@ function CardPostagens({ post }: CardPostagensProps) {
                 </div>
             </div>
             <div className="flex">
+                <Curtir />
                 <Link to={`/editarPostagem/${post.id}`} className='w-full text-white bg-cyan-300 
-                    hover:bg-cyan-800 flex items-center justify-center py-2'>
+                    hover:bg-cyan-800 flex items-center justify-center py-2 rounded'>
                     <button>Editar</button>
                 </Link>
                 <Link to={`/deletarPostagem/${post.id}`} className='text-white bg-rose-500 
-                    hover:bg-rose-800 w-full flex items-center justify-center'>
+                    hover:bg-rose-800 w-full flex items-center justify-center rounded'>
                     <button>Deletar</button>
                 </Link>
             </div>

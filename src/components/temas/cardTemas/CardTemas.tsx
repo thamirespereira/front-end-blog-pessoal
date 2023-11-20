@@ -18,14 +18,14 @@ function CardTemas({ tema }: CardTemasProps) {
 
             <div className="flex">
                 <Link to={`/editarTema/${tema.id}`}
-                    className='w-full text-slate-100 bg-cyan-300 hover:bg-cyan-800 
-                        flex items-center justify-center py-2'>
+                    className='w-full text-slate-100 bg-cyan-400 hover:bg-cyan-800 
+                        flex items-center justify-center py-2 rounded'>
                     <button>Editar</button>
                 </Link>
 
                 <Link to={`/deletarTema/${tema.id}`}
                     className='text-slate-100 bg-rose-500 hover:bg-rose-800 w-full 
-                        flex items-center justify-center'>
+                        flex items-center justify-center rounded'>
                     <button>Deletar</button>
                 </Link>
             </div>
